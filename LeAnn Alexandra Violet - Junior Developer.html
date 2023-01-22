@@ -1,11 +1,7 @@
 <!DOCTYPE html>
-<!-- This Document is my leanring journey into html and web dev  https://www.udemy.com/course/the-web-developer-bootcamp/-->
-<!-- This Document is my leanring journey into html and web dev  https://www.udemy.com/course/the-web-developer-bootcamp/-->
 <!--
-
 Test this project at
 https://leannalexandra.github.io/LeAnn_WebDeveloperCourseWork/LeAnn%20Alexandra%20Violet%20-%20Junior%20Developer.html
-
 -->
 <html lang="en">
 
@@ -24,58 +20,68 @@ https://leannalexandra.github.io/LeAnn_WebDeveloperCourseWork/LeAnn%20Alexandra%
             margin-left: auto;
             margin-right: auto;
             padding: 4%;
+        }
 
+        ul {
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+
+        li {
+            list-style: none;
+            padding-right: 1%;
+            padding-left: 2%;
         }
 
         div {
-            padding-top: 2%;
-            padding-left: 3%;
-            padding-right: 3%;
-            padding-bottom: 4%;
+            padding: 1%;
             margin-left: auto;
             margin-right: auto;
             align-items: center;
         }
 
         p {
-            padding-left: 2%;
-            padding-right: 3%;
+            padding-left: 6%;
+            padding-right: 6%;
         }
 
         h2 {
             font-size: xx-large;
+            padding-left: 4%;
         }
 
         h3 {
-            padding-left: 2%;
-        }
-
-        h4 {
             padding-left: 3%;
         }
 
-        td {
+        h4 {
+            padding-left: 4%;
+        }
+
+        h1 {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 100%;
+            font-size: 200%;
+            min-width: 50%;
+            /**/
+            height: auto;
             color: #c1c1c1;
             text-align: center;
             align-content: center;
         }
 
-        table {
+        .header {
             text-align: center;
             align-content: center;
             margin-left: auto;
             margin-right: auto;
+            max-height: 450px;
+            min-height: 1%;
         }
-
 
         img {
             border: 6px solid #444444;
-            max-width: 100%;
             height: auto;
-            align-self: center;
-
+            max-width: 90%;
         }
 
         .footer {
@@ -83,9 +89,13 @@ https://leannalexandra.github.io/LeAnn_WebDeveloperCourseWork/LeAnn%20Alexandra%
             left: 0;
             bottom: 0;
             width: 100%;
+            min-height: 30px;
+            max-height: 10%;
+            font-size: 80%;
             background-color: rgb(43, 43, 43);
             color: white;
             text-align: center;
+            align-content: center;
         }
 
         .social_but {
@@ -94,59 +104,50 @@ https://leannalexandra.github.io/LeAnn_WebDeveloperCourseWork/LeAnn%20Alexandra%
             height: 38px;
             border-radius: 7px 0px 7px 7px;
             align-content: center;
+        }
 
+        .tsdr {
+            color: #212121;
+            list-style-type: disc;
+        }
+
+        .tsdr:hover .tmi {
+            display: block;
+        }
+
+        .tmi {
+            display: none;
         }
 
         a {
             margin-left: auto;
             margin-right: auto;
-
         }
 
         svg {
             margin: auto;
             padding: 2px;
-
         }
     </style>
 </head>
 
-<!-- This is a comment in HTML, and lo and behold... there is still electricity (This is niche for the South-African Viewers) -->
-
 <body>
-
-
-
-
-
-    <table>
-        <tr>
-            <td><img size style="border: 0px"
-                    src="https://media.licdn.com/dms/image/C4D03AQF5D_Gf6Ur5xg/profile-displayphoto-shrink_400_400/0/1662748717397?e=1679529600&amp;v=beta&amp;t=1nrSU9ShhYfTbjyVd7XCkYVkgWk7_SP-d7rF8V5sFq4"
-                    alt="Leann Violet" id="ember411" class="ember-view profile-photo-edit__preview">
-            </td>
-            <td>
-                <h1>
-                    <!--    My Picture icon reverse engineered from LinkedIn Site to always be up to date  (jk, just copyp pasted)--><!--<Img src="stuff/LeANnLinkedIN.jpg" width=130px alt="A dashing picture of me"></Img> my own hosted picture is removed in favour of the one on linked in (they are the same)-->
-                    LeAnn Alexandra Violet
-                </h1>
-                <!--    Ap icon reverse engineered from LinkedIn Site (jk, just copyp pasted)-->
-            </td>
-        </tr>
-    </table>
-
-    <div style="width: 50%;">
+    <div class="header" style="padding:0;">
+        <img style="border: 0px; max-height: inherit; max-width: 33%;"
+            src="https://media.licdn.com/dms/image/C4D03AQF5D_Gf6Ur5xg/profile-displayphoto-shrink_400_400/0/1662748717397?e=1679529600&amp;v=beta&amp;t=1nrSU9ShhYfTbjyVd7XCkYVkgWk7_SP-d7rF8V5sFq4"
+            alt="Leann Violet">
+        <h1>
+            LeAnn Alexandra Violet
+        </h1>
+    </div>
+    <nav>
         <a style="text-decoration:none;" href=" https://www.linkedin.com/in/leannalexandra/" target="_blank">
-            <li-icon type="app-linkedin-bug-color-icon" size="large" role="img" aria-label="LinkedIn" target="_blank"
-                alt="LinkedIn">
-                <svg class="social_but" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                    data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="38" height="38"
-                    focusable="false">
-                    <path
-                        d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
-                    </path>
-                </svg>
-            </li-icon>
+            <svg class="social_but" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24"
+                fill="currentColor" class="mercado-match" width="38" height="38" focusable="false">
+                <path
+                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                </path>
+            </svg>
         </a>
         <a href="https://github.com/leannalexandra" target="_blank">
             <svg style="padding-left: 3px;" class="social_but" height="44" aria-hidden="true" viewBox="0 0 17 17"
@@ -156,38 +157,33 @@ https://leannalexandra.github.io/LeAnn_WebDeveloperCourseWork/LeAnn%20Alexandra%
                 </path>
             </svg>
         </a>
-
-    </div>
-
+    </nav>
     <hr>
-
-
-    <div style="background-color:#c1c1c1">
-        <H2>I am actively learning</H2>
-        <p>I like to learn new things. I always knew about HTML and CSS and Javascript, but never got into web
-            development before. Right now, this page is is what I am building as a part of my learning journey on <A
-                href="https://www.udemy.com/course/the-web-developer-bootcamp/">Udemy</A> I reconfigured my life in 2023
+    <Main style="background-color:#c1c1c1">
+        <H2 style="padding-top:5%;">Introduction</H2>
+        <p> I like to learn new things. I specifically like technology and expanding my programming knowledge.I
+            reconfigured my life in 2023
             to pick up skills I always knew I wanted to do, but never
             had any real world application for. <B>I am doing this.</B>. </p>
-
-
+        <H2>I am actively learning</H2>
+        <p>I always knew about HTML and CSS and Javascript, but never got into web
+            development before. Right now, this page is is what I am building as a part of my learning journey on <A
+                href="https://www.udemy.com/course/the-web-developer-bootcamp/">Udemy</A>
+        </p>
         <H2>Currently on my plate - mmhmm delicious &#128523 </H2>
         <p>I am actively seeking to improve myself and my understanding of the full stack developer's role and core
             competences. Althought I have previously done some "backyard mechmaniac" projects, that would only put me to
             shame, I have decided in 2022 to go back and relearn a couple of things. Here is what I am currently
             learning in 2023: </p>
-        <P>
         <UL>
             <LI>Adavnced SQL Bootcamp - <a href="https://www.udemy.com/course/advanced-sql-bootcamp/"> Udemy </a>
             </LI>
             <LI>Become a Product Manager | Learn the skills & Get the Job - <a
                     href="https://www.udemy.com./courses/become-a-product-manager-learn-the-skills-get-a-job/">
                     Udemy</A> </LI>
-
             <LI>Unreal Engine 5 C++ Developer:Learn C++ & Make Video Games - <A
                     href="https://www.udemy.com/course/unrealcourse/">Udemy</A> </LI>
         </UL>
-        </P>
         <p>Although just having a certificate of completion from Udemy may seem impressive, I assure you I'd
             rather leave my 'current learning' as is than rush through without doing all of the projects, spending
             enough time to learn all the ins and outs of the subject matter and then focus on what interest me the most.
@@ -195,206 +191,182 @@ https://leannalexandra.github.io/LeAnn_WebDeveloperCourseWork/LeAnn%20Alexandra%
             internship with a UK based gaming company, sadly I had to resign as my then career demanded to much time of
             me. This prompted me into rethinking what I really want from life and I gave notice and started shifting my
             focus to learning.</p>
-
         <H2>Completed Learning - Programming Specific</H2>
-
-
         <UL>
-            <h3>C# Masterclass - <a href="https://www.udemy.com/course/complete-csharp-masterclass/">Udemy</a></h3>
-
-
-            <a style="text-decoration:none;"
-                href="https://www.udemy.com/certificate/UC-b712a340-d669-4fa9-9d28-f319894cd122/" target="_blank"><img
-                    style="max-width:500px;" data-purpose="certificate-img"
-                    alt="Certificate of completion in the C# course" class="course-certificate--certificate-img--2KMg3"
-                    width="90%"
-                    src="https://udemy-certificate.s3.amazonaws.com/image/UC-b712a340-d669-4fa9-9d28-f319894cd122.jpg?v=1664048987000"></a>
-
-            <p></p>
-            <!--<ul>
+            <li>
+                <h3>C# Masterclass - <a href="https://www.udemy.com/course/complete-csharp-masterclass/">Udemy</a></h3>
+                <a style="text-decoration:none;"
+                    href="https://www.udemy.com/certificate/UC-b712a340-d669-4fa9-9d28-f319894cd122/"
+                    target="_blank"><img style="max-width:500px;" data-purpose="certificate-img"
+                        alt="Certificate of completion in the C# course"
+                        class="course-certificate--certificate-img--2KMg3" width="90%"
+                        src="https://udemy-certificate.s3.amazonaws.com/image/UC-b712a340-d669-4fa9-9d28-f319894cd122.jpg?v=1664048987000"></a>
+            </li>
+            <li>
+                <h3>Proof of basics - SoloLearn</h3>
+                <a style="text-decoration:none;" href="https://www.sololearn.com/certificates/CT-TCIRCDXE"
+                    target="_blank"><img src="https://api2.sololearn.com/v2/certificates/CT-TCIRCDXE/image/jpg"
+                        width=350px style="display:inline-block" alt="certificate"
+                        class="certificate-image-wrapper__image"></a>
+                <a style="text-decoration:none;" href="https://www.sololearn.com/certificates/CT-ZMX3UI08"
+                    target="_blank">
+                    <img src="https://api2.sololearn.com/v2/certificates/CT-ZMX3UI08/image/jpg" alt="certificate"
+                        class="certificate-image-wrapper__image" width=350px style="display:inline-block;">
+                </a>
+                <a style="text-decoration:none;" href="https://www.sololearn.com/certificates/CT-PRHNSDEQ"
+                    target="_blank">
+                    <img src="https://api2.sololearn.com/v2/certificates/CT-PRHNSDEQ/image/jpg" width=350px
+                        alt="certificate" class="certificate-image-wrapper__image" style="display: inline-block;">
+                </a>
+            </li>
+            <li>
+                <h3>Humble Beginings</h3>
+                I started my programming Journey back in 2006, Gr. 10. We Started with <B>Java</B>, and later
+                incorporated <B>SQL</B> as part of the course. and I remember the classroom
+                vividly.
+                <ul>
                     <LI>
                         Amongst my crowing achievements are:
-
-
                         <UL>
-                            <LI>I received the Trophy for the subject in 2008 as the top
+                            <LI style="list-style-type: disc;">I received the Trophy for the subject in 2008 as the top
                                 achiever.</LI>
-                            <LI>Placed first in the IT (Programming) Olympiad in Mpumalanga in 2008. Sadly, I didn't
-                                receive news of this until the next round was over. I did learn that proactive checking
-                                up
-                                on
-                                these
-                                kind of
-                                things are beneficial to everyone involved. In my naive mindset still await my
-                                invitation to
-                                the
-                                next round
-                                &#128517.</LI>
+                            <LI style="list-style-type: disc;" class="tsdr">Placed first in the IT (Programming)
+                                Olympiad in
+                                Mpumalanga in 2008.
+                                <p class="tmi">Sadly, I didn't receive news of this until the next round was over.
+                                    I did learn that proactive checking
+                                    up on these kind of things are beneficial to everyone involved. In my naive mindset
+                                    still await my
+                                    invitation to the next round
+                                    &#128517.</p>
+                            </LI>
                         </UL>
                     </LI>
                 </ul>
-                -->
-
-
-
-            <h3>Proof of basics - SoloLearn</h3>
-
-
-
-
-            <a style="text-decoration:none;" href="https://www.sololearn.com/certificates/CT-TCIRCDXE"
-                target="_blank"><img src="https://api2.sololearn.com/v2/certificates/CT-TCIRCDXE/image/jpg" width=350px
-                    style="display:inline-block" alt="certificate" class="certificate-image-wrapper__image"></a>
-            <a style="text-decoration:none;" href="https://www.sololearn.com/certificates/CT-ZMX3UI08" target="_blank">
-                <img src="https://api2.sololearn.com/v2/certificates/CT-ZMX3UI08/image/jpg" alt="certificate"
-                    class="certificate-image-wrapper__image" width=350px style="display:inline-block;">
-            </a>
-            <a style="text-decoration:none;" href="https://www.sololearn.com/certificates/CT-PRHNSDEQ" target="_blank">
-                <img src="https://api2.sololearn.com/v2/certificates/CT-PRHNSDEQ/image/jpg" width=350px
-                    alt="certificate" class="certificate-image-wrapper__image" style="display: inline-block;">
-            </a>
-
-
-            <h3>Humble Beginings</h3>
-            <p>I started my programming Journey back in 2006, Gr. 10. We Started with <B>Java</B>, and later
-                incorporated <B>SQL</B> as part of the course. and I remember the classroom
-                vividly.</p>
-            <ul>
-                <LI>
-                    Amongst my crowing achievements are:
-
-
-                    <UL>
-                        <LI>I received the Trophy for the subject in 2008 as the top
-                            achiever.</LI>
-                        <LI>Placed first in the IT (Programming) Olympiad in Mpumalanga in 2008. Sadly, I didn't
-                            receive news of this until the next round was over. I did learn that proactive checking
-                            up
-                            on
-                            these
-                            kind of
-                            things are beneficial to everyone involved. In my naive mindset still await my
-                            invitation to
-                            the
-                            next round
-                            &#128517.</LI>
-                    </UL>
-                </LI>
-            </ul>
-
-
+            </li>
         </UL>
-        </p>
-
         <h2>Past Accomplishments</h2>
-        <H3>Self-published two games to the google playstore (2019). [they have been removed, details below]
-        </H3>
-        <h4><b>TrumpNation</b></h4>
         <ul>
-
-            A Tetris clone that leaned heavily on narrative of 'he who shalled
-            not be
-            named's drive to build a wall to keep illigal immigrants from entering the country.<br>My
-            TakeAways From this project:
-            <ul>
-                <Li>
-                    &#9888<b>DO NOT</b> get involved in something political, racist or offensive - not even
-                    for satirical
-                    purposes. There are better ways to appeal to audiences that does not garner strong
-                    disgust or negative reaction.<br><b>DO:</b> Be more respectful of people in general.
-                </Li>
-                <li>
-                    The use of C# and Unity - (Android targeted)
-                </li>
-                <li>
-                    The Use of both Google Ads and Unity Ads on the Android Mobile Platform
-                </li>
-                <li>
-                    Core Features:
+            <p>I Self-published two games to the google playstore (Around 2019). [they have been removed, details below]
+            </p>
+            <li>
+                <h3><b>TrumpNation</b></h3>
+                <ul>
+                    <p>
+                        A Tetris clone that leaned heavily on narrative of 'he who shalled not be named's drive to build
+                        a wall to keep illigal immigrants from entering the country.
+                        <br>My TakeAways From this project:
+                    </p>
+                    <br>
+                    <Li>
+                        &#9888<b>DO NOT</b> get involved in something political, racist or offensive - not even for
+                        satirical purposes. There are better ways to appeal to audiences that does not garner strong
+                        disgust or negative reaction.
+                    </li>
+                    <br>
+                    <li>
+                        <b>DO:</b> Be more respectful of people in general.
+                    </Li>
+                    <br>
                     <ul>
-                        <LI>Infinitely increasing in difficulty</LI>
-                        <LI>Ads, which can be disabled</LI>
-                        <LI>It kept stats of nearly everything (overengineered)</LI>
-                        <LI>The Use of custom UI, pictures and sounds</LI>
-                        <LI>Persistent storage</LI>
-                        <LI>Ingame currency to "buy" blocks when you need them.</LI>
+                        <li>
+                            <b>Core Features:</b>
+                            <ul>
+                                <LI style="list-style: disc;">Infinitely increasing in difficulty</LI>
+                                <LI style="list-style: disc;">Ads, which can be disabled</LI>
+                                <LI style="list-style: disc;">It kept stats of nearly everything (overengineered)</LI>
+                                <LI style="list-style: disc;">The Use of custom UI, pictures and sounds</LI>
+                                <LI style="list-style: disc;">Persistent storage</LI>
+                                <LI style="list-style: disc;">Ingame currency to "buy" blocks when you need them.</LI>
+                                <li style="list-style: disc;">
+                                    The use of C# and Unity - (Android targeted)
+                                </li>
+                                <li style="list-style: disc;">
+                                    The Use of both Google Ads and Unity Ads on the Android Mobile Platform
+                                </li>
+                            </ul>
+                        </li>
+                        <br>
+                        <li>
+                            <b>Planned Features:</b>
+                            <ul>
+                                <LI style="list-style: disc;">Google Leaderboards</LI>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    Planned Features:
-                    <ul>
-                        <LI>Google Leaderboards</LI>
-                    </ul>
-                </li>
-                <b>SCRAPPED BECAUSE IT WAS AN OFFENSIVE PREMISE THAT DID NOT ALLIGN WITH GOOGLE'S
-                    POLICIES.</b>
-            </ul>
-
+                    <br>
+                    <b>SCRAPPED BECAUSE IT WAS AN OFFENSIVE PREMISE THAT DID NOT ALLIGN WITH GOOGLE'S POLICIES.</b>
             </li>
         </ul>
-        <h3><b>Vertigo</b></h3>
-        <Ul>
-
-            <a href="https://drive.google.com/file/d/1DHPQxna7VayqGVZmLpwhJq-5HtB-nMrA/view?usp=sharing">Download
-                APK (25.1MB)</a><br>
-            A 3d into the screen endless runner that used the
-            gyroscopes of the phone to
-            steer the ball on a rotating spiral like maze (called pipe). [Now it sounds better than it was]
-            <ul>
-                <li>Core Features:
-                    <ul>
-                        <LI>Infinitely increasing in difficulty, Every level is faster and longer</LI>
-                        <LI>Ads, which can be disabled</LI>
-                        <LI>Use of gyroscopes in the game environment</LI>
-                        <LI>The Use of custom UI, pictures and sounds</LI>
-                        <LI>Persistent storage</LI>
-                        <LI>Different Colored Levels</LI>
-                    </ul>
-                </li>
-                <li>Planned Features:
-                    <ul>
-                        <LI>Google Leaderboards - implemented</LI>
-                        <LI>Google Play Services (persistent online storrage) </LI>
-                        <LI>Upgraded Pipe elements to connect smoothly (Designed in Blender) - Implemented in a
-                            test
-                            build</LI>
-                    </ul>
-                    <b>Project abandoned after the computer with the source code was stolen, Later removed from
-                        play
-                        store for not keeping up to date with the minimum sdk-versions through updates.</b>
-                </li>
-            </Ul>
-        </ul>
-
-
+        </li>
+        <li>
+            <h3><b>Vertigo</b></h3>
+            <Ul>
+                <a href="https://drive.google.com/file/d/1DHPQxna7VayqGVZmLpwhJq-5HtB-nMrA/view?usp=sharing">Download
+                    APK (25.1MB)</a><br>
+                A 3d into the screen endless runner that used the
+                gyroscopes of the phone to
+                steer the ball on a rotating spiral like maze (called pipe). [Now it sounds better than it was]
+                <ul>
+                    <li><b>Core Features:</b>
+                        <ul>
+                            <LI style="list-style: disc;">Infinitely increasing in difficulty, Every level is faster and
+                                longer</LI>
+                            <LI style="list-style: disc;">Ads, which can be disabled</LI>
+                            <LI style="list-style: disc;">Use of gyroscopes in the game environment</LI>
+                            <LI style="list-style: disc;">The Use of custom UI, pictures and sounds</LI>
+                            <LI style="list-style: disc;">Persistent storage</LI>
+                            <LI style="list-style: disc;">Different Colored Levels</LI>
+                        </ul>
+                    </li>
+                    <li><b>Planned Features:</b>
+                        <ul>
+                            <LI style="list-style: disc;">Google Leaderboards - implemented</LI>
+                            <LI style="list-style: disc;">Google Play Services (persistent online storrage) </LI>
+                            <LI style="list-style: disc;">Upgraded Pipe elements to connect smoothly (Designed in
+                                BBlender) -Implemented in atestbuild</LI>
+                        </ul>
+                        <br>
+                        <b>Project abandoned after the computer with the source code was stolen, Later removed from the
+                            playstore for not keeping up to date with the minimum sdk-versions through updates.</b>
+                    </li>
+                </Ul>
+            </ul>
+            </ul>
+        </li>
+        <br>
         <H2>Contact Me</H2>
-        <form>
-            <label for="nametext">Name:</label>
-            <Input type="text" padding="2%" margin=" 10px" id="name" name="name" placeholder="LeAnn Alexandra" required
-                minlength="2" maxlength="14" size="15"></Input>
+        <form action="/comingsoon" style="padding:4%">
+            <label for="name">Name:</label>
+            <Input style="margin-bottom:4%; padding-bottom: 2%; padding-top: 2%;" type="text" padding="2%"
+                margin=" 10px" id="name" name="name" placeholder="LeAnn Alexandra" required minlength="2" maxlength="65"
+                size="34"></Input>
             <br>
-            <label for="emailText">Email</label>
-            <Input type="email" id="email" placeholder="you@gmail.com" name="email"></Input>
+            <label for="email">Email</label>
+            <Input style="margin-bottom:4%;  padding-bottom: 2%; padding-top: 2%;" required type="email" id="email"
+                placeholder="you@gmail.com" name="email" size="43"></Input>
             <br>
-            <Input type="text" id="textmessage" placeholder="LeAnn, we want to talk, your wrok is amazing" name="text"
-                required minlength="2" maxlength="14" size="15"></Input>
-
+            <label for="textmessage">Message:</label><br>
+            <textarea style="height: 50px; margin: 1%; width: auto; max-width: 97%; min-width: 97%;" id="textmessage"
+                placeholder="LeAnn, we want to talk, your wrok is amziang, hwwevr we'd like you to consider learning propperse spelling"
+                name="text" required minlength="50"></textarea>
+            <br>
+            <button style="margin: 2%; padding: 10px;  align-self: center;">Send</button>
+            <p style="padding-bottom: 10%;">If you like what you see, and you want to see more, check in weekly. I
+                update this site as I am going, so the progress might supprise you. (I think I will add the archive
+                viewer eventually. (I have the vision for it) - a small navigational tools, that can render the legacy
+                versions of this site. </p>
             <!--
-        <Input type="password" placeholder="password" id="password" name="password" required minlength="8" maxlength="14" size="15"></Input>
-   
+<Input type="password" placeholder="password" id="password" name="password" required minlength="8" maxlength="14" size="15"></Input>
 -->
         </form>
-    </div>
-
-
+    </main>
     <div>
         <!-- THIS IS FOR THE SANITY OF THE POTTOM OF THE PAGE-->
     </div>
     </div>
     <div class="footer" style="padding: 0;"">
-        <p>This site is the learning project of LeAnn Alexandra Violet <sup>&copy;</sup>2023 </p>
-    </div>
-
+This site is the learning project of LeAnn Alexandra Violet <sup>&copy;</sup>2023
+</div>
 </body>
-
 </html>
